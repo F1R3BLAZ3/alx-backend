@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+"""
+Pagination Helper
+
+This module provides a function to calculate the start and end indices for a given
+page and page size in a 1-indexed pagination system.
+"""
+
 
 def index_range(page: int, page_size: int) -> tuple:
     """
@@ -15,6 +22,7 @@ def index_range(page: int, page_size: int) -> tuple:
     if page <= 0 or page_size <= 0:
         raise ValueError("Page and page_size must be positive integers.")
 
+    # Calculate the start and end indices
     start_index = (page - 1) * page_size
     end_index = start_index + page_size
 
