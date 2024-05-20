@@ -2,8 +2,8 @@
 """
 Pagination Helper
 
-This module provides a function to calculate the start and end indices for a given
-page and page size in a 1-indexed pagination system.
+This module provides a function to calculate the start and end indices for a
+given page and page size in a 1-indexed pagination system.
 """
 
 
