@@ -55,28 +55,3 @@ class MRUCache(BaseCaching):
             self.mru_order.append(key)
             return self.cache_data[key]
         return None
-
-
-def main():
-    """
-    Main function to demonstrate the usage of MRUCache.
-    """
-    cache = MRUCache()
-    cache.put("A", "Apple")
-    cache.put("B", "Banana")
-    cache.put("C", "Cherry")
-    cache.put("D", "Date")
-    cache.print_cache()
-
-    print("Get A:", cache.get("A"))
-
-    cache.put("E", "Elderberry")
-    cache.print_cache()
-
-    print("Get B:", cache.get("B"))
-    cache.put("F", "Fig")
-    cache.print_cache()
-
-
-if __name__ == "__main__":
-    main()
